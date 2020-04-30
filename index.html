@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+
+<style>
+.slideshow {
+ margin: 0 auto;
+ padding-top: 50px;
+ height: 100vh;
+ background: skyblue;
+ box-sizing: border-box;
+}
+.content {
+ margin: auto;
+ width: 190px;
+ perspective: 1000px;
+ position: relative;
+ padding-top: 80px;
+}
+.content-carraousel {
+ width: 100%;
+ position: absolute;
+ float: right;
+ animation: rotar 15s infinite linear;
+ transform-style: preserve-3d;
+}
+.content-carraousel:hover {
+ animation-play-state: paused;
+ cursor: pointer;
+}
+.content-carraousel figure{
+ width: 190px;
+ height: 300px;
+ border: 1px solid #4d444d;
+ overflow: hidden;
+ position: absolute;
+}
+.content-carraousel figure:nth-child(1){
+ transform: rotateY(0deg) translateZ(300px);
+}
+.content-carraousel figure:nth-child(2){
+ transform: rotateY(40deg) translateZ(300px);
+}
+.content-carraousel figure:nth-child(3){
+ transform: rotateY(800deg) translateZ(300px);
+}
+
+.content-carraousel figure:nth-child(4){
+ transform: rotateY(120deg) translateZ(300px);
+}
+.content-carraousel figure:nth-child(5){
+ transform: rotateY(160deg) translateZ(300px);
+}
+.content-carraousel figure:nth-child(6){
+ transform: rotateY(200deg) translateZ(300px);
+}
+.content-carraousel figure:nth-child(7){
+ transform: rotateY(240deg) translateZ(300px);
+}
+.content-carraousel figure:nth-child(8){
+ transform: rotateY(280deg) translateZ(300px);
+}
+.content-carraousel figure:nth-child(9){
+ transform: rotateY(320deg) translateZ(300px);
+}
+.shadow {
+ position: absolute;
+ box-shadow: 0px 0px 20px 0px #000;
+ border-radius: 2px;
+}
+.content-carraousel img{
+ image-rendering: auto;
+ transition: all 300ms;
+ width: 100%;
+ height: 100%;
+}
+.content-carraousel img:hover{
+ transform: scale(1.2);
+}
+@keyframes rotar {
+ 0%{ transform: rotateY(0deg)}
+ 100%{ transform: rotateY(360deg)}
+}
+
+</style>
+</head>
+<body>
+ <div id="container">
+ <section class="slideshow">
+ <div class="content">
+ <div class="content-carraousel">
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/h4g8vc576ur0ttu/Glory-
+LOGO.jpg?dl=1" alt=""></figure>
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/ghh3ibahinzy454/Glory-Ye-
+Xiu.jpg?dl=1" alt=""></figure>
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/29a01kkjswywgib/Gory-
+Heroine.jpg?dl=1" alt=""></figure>
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/5bykms8xjw273hg/Glory-
+Friend.jpg?dl=1" alt=""></figure>
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/fnuhn4lwac1astk/Glory-
+Heroine-Friend.jpg?dl=1" alt=""></figure>
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/htmd4btqbuzynt4/Glory-
+Math-Genius.jpg?dl=1" alt=""></figure>
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/sg53wq6i3v3jpzm/Glory-
+Villain.jpg?dl=1" alt=""></figure>
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/kzmw33k6d5eh9f8/Glory-
+Mage-Apprentice.jpg?dl=1" alt=""></figure>
+ <figure class="shadow"><img src="https://dl.dropbox.com/s/l63fq25a1bv8co3/Glory-
+Muscular.jpg?dl=1" alt=""></figure>
+ </div>
+ </div>
+ </section>
+ </div>
+</body>
+</html>
